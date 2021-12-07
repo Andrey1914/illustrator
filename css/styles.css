@@ -21,17 +21,18 @@ body {
   transform: translateY(-50%);
 }
 
-.site-nav a {
+.nav .link {
   text-decoration: none;
   color: black;
 }
 
-.site-nav li {
-  display: inline;
+.nav {
+  display: flex;
+  padding: 5px, 10px;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.nav a:hover,
+.nav a:focus {
   color: blue;
 }
 

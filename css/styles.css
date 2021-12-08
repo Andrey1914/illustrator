@@ -1,8 +1,10 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Corinthia", cursive;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 .page-header {
+  height: 150px;
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 20px;
@@ -10,17 +12,20 @@ body {
 
 .text-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 70px;
   transform: translateY(50%);
 }
 
 .logo {
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
+  width: 150px;
+  height: 150px;
   transform: translateY(-50%);
 }
 
 .container {
   display: flex;
+  font-size: 50px;
   padding: 5px, 10px;
   margin-bottom: 20px;
   width: auto;
@@ -38,7 +43,7 @@ body {
 }
 
 .container > .item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .hero {
@@ -49,7 +54,7 @@ body {
 
 .my-works {
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
   padding: 10px;
 }
 
@@ -65,6 +70,7 @@ body {
 }
 
 .copyright {
+  font-size: 30px;
   text-align: center;
 }
 

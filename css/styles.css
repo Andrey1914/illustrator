@@ -4,7 +4,6 @@ body {
 }
 
 .page-header {
-  height: 300px;
   padding-left: 170px;
   padding-right: 170px;
   padding-top: 20px;
@@ -17,9 +16,6 @@ body {
 }
 
 .logo {
-  /* background-color: gainsboro; */
-  width: 150px;
-  height: 150px;
   transform: translateY(-50%);
 }
 
@@ -59,14 +55,14 @@ body {
 }
 
 .images {
+  display: block;
   align-content: center;
   padding-left: 155px;
   padding-right: 120px;
 }
 
-.item {
-  box-shadow: 2px;
-  color: grey;
+.image {
+  display: inline;
 }
 
 .copyright {
@@ -76,7 +72,6 @@ body {
 
 .page-footer {
   background-color: gainsboro;
-  height: 60px;
   padding-top: 10px;
   padding-bottom: 40px;
 }

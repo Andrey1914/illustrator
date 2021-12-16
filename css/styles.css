@@ -1,5 +1,5 @@
 body {
-  font-family: "Corinthia", cursive;
+  font-family: 'Corinthia', cursive;
   /* font-family: "Montserrat", sans-serif; */
 }
 
@@ -88,4 +88,16 @@ body {
   height: 40px;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+.biography {
+  width: 1000px;
+}
+
+.biography-title {
+  font-size: 60px;
+}
+
+.biography-text {
+  font-size: 30px;
 }

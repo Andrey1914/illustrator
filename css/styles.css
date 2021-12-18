@@ -64,6 +64,7 @@ body {
 .list {
   padding-left: 155px;
   padding-right: 120px;
+  padding-bottom: 20px;
 }
 
 .list-item {

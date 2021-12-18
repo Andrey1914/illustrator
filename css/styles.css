@@ -1,9 +1,9 @@
 body {
-  font-family: 'Corinthia', cursive;
+  font-family: 'Corinthia', cursive, sans-serif;
   /* font-family: "Montserrat", sans-serif; */
   background-color: #f9f9fd;
 }
-
+/* header */
 .page-header {
   padding-left: 200px;
   padding-right: 200px;
@@ -13,6 +13,7 @@ body {
 .text-title {
   margin-left: 300px;
   font-size: 70px;
+  color: rgb(0, 0, 94);
   transform: translateY(50%);
 }
 
@@ -21,8 +22,8 @@ body {
   border-radius: 50%;
   transform: translateY(-50%);
 }
-
-.container {
+/* navigation */
+.site-nav {
   display: flex;
   font-size: 50px;
   padding: 5px, 10px;
@@ -31,20 +32,24 @@ body {
   justify-content: center;
 }
 
-.container .link {
+.site-nav .link {
   text-decoration: none;
   color: black;
 }
 
-.container a:hover,
-.container a:focus {
+.site-nav a:hover,
+.site-nav a:focus {
   color: blue;
 }
 
-.container > .item:not(:last-child) {
-  margin-right: 20px;
+.site-nav .link:active {
+  color: blue;
 }
 
+.site-nav > .link:not(:last-child) {
+  margin-right: 20px;
+}
+/* hero */
 .hero {
   display: flex;
   justify-content: center;
@@ -55,8 +60,9 @@ body {
   text-align: center;
   font-size: 40px;
   padding: 10px;
+  color: rgb(0, 0, 94);
 }
-
+/* images */
 .images {
   display: block;
   align-content: center;
@@ -66,17 +72,20 @@ body {
 
 .image {
   display: inline;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+/* footer */
+.page-footer {
+  background-color: gainsboro;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .copyright {
   font-size: 30px;
   text-align: center;
-}
-
-.page-footer {
-  background-color: gainsboro;
-  padding-top: 10px;
-  padding-bottom: 40px;
 }
 
 .social-links {
@@ -92,7 +101,7 @@ body {
   margin-right: 10px;
   margin-top: 10px;
 }
-
+/* about */
 .biography {
   width: 950px;
   display: flex;
@@ -116,10 +125,12 @@ body {
 .biography-title {
   text-align: center;
   font-size: 35px;
+  color: rgb(0, 0, 94);
 }
 
 .biography-text {
   text-align: center;
   position: relative;
   font-size: 35px;
+  color: rgb(0, 0, 94);
 }

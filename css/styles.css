@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Corinthia', cursive, sans-serif;
   /* font-family: "Montserrat", sans-serif; */
@@ -5,20 +15,21 @@ body {
 }
 /* header */
 .page-header {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
 }
 
 .text-title {
   margin-left: 300px;
   font-size: 70px;
+  font-weight: bold;
   color: rgb(0, 0, 94);
   transform: translateY(50%);
 }
 
 .logo {
-  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   transform: translateY(-50%);
 }
@@ -49,26 +60,25 @@ body {
 
 /* hero */
 .hero {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
 }
 
 .greetings {
   text-align: center;
   font-size: 40px;
-  padding: 10px;
+  margin-bottom: 20px;
   color: rgb(0, 0, 94);
 }
 /* images */
 .list {
-  padding-left: 155px;
-  padding-right: 120px;
-  padding-bottom: 20px;
+  /* width: 1020px; */
+  padding-left: 160px;
+  padding-right: 160px;
+  margin-bottom: 20px;
 }
 
 .list-item {
-  display: inline;
+  display: inline-block;
 }
 
 .image {
@@ -125,13 +135,17 @@ body {
 
 .biography-title {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: bold;
   color: rgb(0, 0, 94);
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .biography-text {
   text-align: center;
   position: relative;
   font-size: 35px;
+  line-height: 1.5;
   color: rgb(0, 0, 94);
 }

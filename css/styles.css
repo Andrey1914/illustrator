@@ -2,6 +2,17 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #f9f9fd;
+  --footer-bg-color: #dcdcdc;
+  --text-color: #6d2e2e;
+  --accent-color: #a00101;
+}
+
+img {
+  display: block;
+}
+
 *,
 *::before,
 *::after {
@@ -10,8 +21,8 @@ html {
 
 body {
   font-family: 'Caveat', cursive, sans-serif;
-  color: rgb(109, 46, 46);
-  background-color: #f9f9fd;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 /* header */
 .page-header {
@@ -26,7 +37,6 @@ body {
   margin-left: 320px;
   font-size: 70px;
   font-weight: bold;
-  color: rgb(109, 46, 46);
   transform: translateY(50%);
 }
 
@@ -40,23 +50,20 @@ body {
 .site-nav {
   display: flex;
   font-size: 50px;
-  padding: 5px, 10px;
   justify-content: center;
 }
 
 .site-nav .link {
   text-decoration: none;
-  color: rgb(109, 46, 46);
+  color: var(--text-color);
   margin-right: 20px;
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: rgb(160, 1, 1);
-}
-
-.site-nav .link:active {
-  color: blue;
+.site-nav .link:focus,
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
 }
 
 /* hero */
@@ -65,13 +72,11 @@ body {
 }
 
 .greetings {
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 40px;
   margin-bottom: 20px;
-  color: rgb(109, 46, 46);
 }
 /* images */
 .list {
@@ -97,7 +102,7 @@ body {
 }
 /* footer */
 .page-footer {
-  background-color: gainsboro;
+  background-color: var(--footer-bg-color);
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -105,7 +110,6 @@ body {
 .copyright {
   font-size: 30px;
   text-align: center;
-  color: rgb(109, 46, 46);
 }
 
 .social-links {
@@ -147,7 +151,6 @@ body {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  color: rgb(109, 46, 46);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -157,5 +160,4 @@ body {
   position: relative;
   font-size: 35px;
   line-height: 1.2;
-  color: rgb(109, 46, 46);
 }

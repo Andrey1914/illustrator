@@ -48,11 +48,16 @@
         <section class="section">
             <div class="box">
                 <div class="modal">
-                    <button class="button-close">
+                    <!-- <button class="button-close">
                         <svg class="close">
                             <use href="./icon/icons.svg#icon-close"></use>
                         </svg>
-                    </button>
+                    </button> -->
+
+                    <form class="js-feedback-form">
+                        <label for="name">Name</label>
+                        <input type="text" name="user-name" id="name"/>
+                    </form>
                     <button class="button-send">send</button>
                 </div>
             </div>
@@ -87,6 +92,19 @@
             </li>
         </ul>
     </footer>
+    <script>
+        ( ( ) => {
+            document
+                .querySelector('js-feedback-form')
+                addEventListener('submit', e => {
+                    e.preventDefault( );
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                });
+        } )( );
+    </script>
     </body>
     
     </html>

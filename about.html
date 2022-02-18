@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                             <a class="header__link" href="./index.html">Home</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link current" href="./about.html">About</a>
+                            <a class="header__link header__link--current" href="./about.html">About</a>
                         </li>
                         <li class="header__item">
                             <a class="header__link" href="#">Contact</a>
@@ -46,10 +46,10 @@
     </header>
     <main>
         <div class="biography">
-            <img class="biography-foto" src="./jpg/tania-proskurnia.jpg" alt="" width="500">
-            <div class="biography-card">
-                <h2 class="biography-title">A little about myself.</h2>
-                <p class="biography-text">
+            <img class="biography__foto" src="./jpg/tania-proskurnia.jpg" alt="Фотография автора">
+            <div class="biography__card">
+                <h2 class="biography__title">A little about myself.</h2>
+                <p class="biography__text">
                     Hello! My name is Tania. I am from Ukraine.
                     I love painting and since early years I have been honing my skills, 
                     first at a children's art school, then at the university. 
@@ -63,27 +63,31 @@
     </main>
     <footer class="footer">
         <p class="copyright">&copy; Created for Tania Proskurnia</p>
-        <ul class="list social-links">
-            <li><a class="social-link" href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
-                    <svg class="link-icon">
+        <ul class="list social-links__list">
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
+                    <svg class="social-links__icon">
                         <use href="./icon/icons.svg#icon-instagram-icon"></use>
                     </svg>
                 </a>
             </li>
-            <li><a class="social-link" href="https://www.facebook.com/tania.proskurnia">
-                    <svg class="link-icon">
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.facebook.com/tania.proskurnia">
+                    <svg class="social-links__icon">
                         <use href="./icon/icons.svg#icon-fb-icon"></use>
                     </svg>
                 </a>
             </li>
-            <li><a class="social-link" href="https://t.me/Tania_Proskurnia">
-                    <svg class="link-icon">
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://t.me/Tania_Proskurnia">
+                    <svg class="social-links__icon">
                         <use href="./icon/icons.svg#icon-telegram-icon"></use>
                     </svg>
                 </a>
             </li>
-            <li><a class="social-link" href="viber://chat?number=+380934846750">
-                    <svg class="link-icon">
+            <li class="social-links__item">
+                <a class="social-links__link" href="viber://chat?number=+380934846750">
+                    <svg class="social-links__icon">
                         <use href="./icon/icons.svg#icon-viber-icon"></use>
                     </svg>
                 </a>

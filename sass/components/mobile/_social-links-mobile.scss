@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+  .social-links {
+    &__link {
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

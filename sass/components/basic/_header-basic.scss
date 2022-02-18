@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  &__link {
+    position: relative;
+  }
+
+  &__logo {
+    display: block;
+
+    fill: $text-color;
+    transition: fill 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+
+    margin-left: auto;
+    // padding-top: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $text-color;
+    transition: color 250ms $timing-function;
+
+    &--current {
+      color: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

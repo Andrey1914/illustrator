@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) {
+  .gallery {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__list {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__image {
+      max-width: 450px;
+    }
+  }
+}

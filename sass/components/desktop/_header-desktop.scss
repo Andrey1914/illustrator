@@ -1,0 +1,26 @@
+@media screen and (min-width: 1200px) {
+  .header {
+    max-width: 1000px;
+
+    &__title {
+      font-size: 70px;
+    }
+
+    &__logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__nav {
+      max-width: 500px;
+    }
+
+    &__link {
+      font-size: 50px;
+
+      &--logo {
+        top: -20px;
+      }
+    }
+  }
+}

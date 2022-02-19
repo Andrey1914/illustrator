@@ -24,6 +24,12 @@
   .gallery {
     &__list {
       max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
     }
 
     &__image {

@@ -317,6 +317,11 @@ a {
 @media screen and (max-width: 479px) {
   .gallery__list {
     max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery__item:not(:last-child) {
+    margin-bottom: 15px;
   }
   .gallery__image {
     max-width: 290px;

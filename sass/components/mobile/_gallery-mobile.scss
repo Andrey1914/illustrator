@@ -5,12 +5,25 @@
     }
 
     &__list {
+      max-width: 450px;
       margin-left: auto;
       margin-right: auto;
     }
 
     &__image {
       max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    &__list {
+      max-width: 320px;
+    }
+
+    &__image {
+      max-width: 290px;
     }
   }
 }

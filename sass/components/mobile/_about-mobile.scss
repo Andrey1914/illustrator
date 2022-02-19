@@ -23,3 +23,13 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .biography {
+    max-width: 300px;
+
+    &__foto {
+      max-width: 300px;
+    }
+  }
+}

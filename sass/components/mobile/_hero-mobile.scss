@@ -9,3 +9,17 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .hero {
+    &__title {
+      font-size: 15px;
+    }
+
+    &__img {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -4,27 +4,80 @@
   margin-bottom: 50px;
 
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-
+  @media screen and (max-width: 480px) {
+    max-width: 300px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 950px;
+  }
   &__foto {
     display: block;
+    @media screen and (max-width: 480px) {
+      max-width: 300px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 369px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 520px;
+    }
   }
 
   &__card {
     display: flex;
     flex-direction: column;
-
     background-color: white;
+    @media screen and (max-width: 767px) {
+      padding: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 30px;
+    }
   }
 
   &__title {
     text-align: center;
-
     font-weight: 700;
+    @media screen and (max-width: 1199px) {
+      font-size: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
     text-align: justify;
-
     line-height: 1.2;
+    @media screen and (max-width: 1199px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 35px;
+    }
   }
 }

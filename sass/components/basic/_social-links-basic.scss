@@ -1,0 +1,21 @@
+.social-links {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__icon {
+    fill: $social-link-color;
+    transition: fill 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      fill: $text-color;
+    }
+  }
+}

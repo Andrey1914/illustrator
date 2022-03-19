@@ -6,45 +6,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illustration</title>
+    <link rel="stylesheet" href="./modern-normalize.css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="page-header">
-        <h1 class="text-title">Illustrator Tania Proskurnia</h1>
-        <img class="logo" src="./icon/logo2-icon.svg" alt="" width="250" />
-        <nav>
-            <ul class="site-nav">
-                <li><a class="link" href="./index.html">Home</a></li>
-                <li><a class="link" href="./about.html">About</a></li>
-                <li><a class="link" href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <section class="section">
+            <div class="container">
+                <div class="header">
+                    <a class="header__link" href="./index.html">
+                        <svg class="header__logo">
+                            <use href="./icon/symbol-defs.svg#new-logo"></use>
+                        </svg>
+                    </a>
+                    <h1 class="header__title">Illustrator Tania Proskurnia</h1>
+                </div>
+    
+                <nav>
+                    <ul class="header__nav list">
+                        <li class="header__item">
+                            <a class="header__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="./about.html">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
     </header>
-    <footer class="page-footer">
+    <main>
+        <section class="section feedback">
+            <div class="box">
+                <div class="modal">
+                    <form class="js-feedback-form">
+                        <ul class="form-list">
+                            <li class="form-item">
+                                <label class="form-label">
+                                    Name
+                                    <input class="form-input" type="text" name="user-name"/>
+                                    <svg class="form-icon">
+                                        <use href="./icon/sprite.svg#icon-person-black"></use>
+                                    </svg>
+                                </label>
+                                
+                            </li>
+
+                            <li class="form-item">
+                                <label class="form-label">
+                                    E-mail
+                                    <input class="form-input" type="email" name="email">
+                                    <svg class="form-icon">
+                                        <use href="./icon/sprite.svg#icon-email-black"></use>
+                                    </svg>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </form>
+                    <button class="btn-send">send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <p class="copyright">&copy; Created for Tania Proskurnia</p>
-        <ul class="social-links">
-            <li><a href="https://instagram.com/tania.proskurnia?utm_medium=copy_link" class="social-links">
-                    <img class="item" src="./icon/instagram-icon.svg" alt="instagram"></a>
+        <ul class="list social-links__list">
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
+                    <svg class="social-links__icon">
+                        <use href="./icon/icons.svg#icon-instagram-icon"></use>
+                    </svg>
+                </a>
             </li>
-            <li><a href="" class="social-links">
-                    <img class="item" src="./icon/fb-icon.svg" alt="facebook"></a>
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://www.facebook.com/tania.proskurnia">
+                    <svg class="social-links__icon">
+                        <use href="./icon/icons.svg#icon-fb-icon"></use>
+                    </svg>
+                </a>
             </li>
-            <li><a href="" class="social-links">
-                    <img class="item" src="./icon/telegram-icon.svg" alt="telegram"></a>
+            <li class="social-links__item">
+                <a class="social-links__link" href="https://t.me/Tania_Proskurnia">
+                    <svg class="social-links__icon">
+                        <use href="./icon/icons.svg#icon-telegram-icon"></use>
+                    </svg>
+                </a>
             </li>
-            <li><a href="" class="social-links">
-                    <img class="item" src="./icon/viber-icon.svg" alt="viber"></a>
+            <li class="social-links__item">
+                <a class="social-links__link" href="viber://chat?number=+380934846750">
+                    <svg class="social-links__icon">
+                        <use href="./icon/icons.svg#icon-viber-icon"></use>
+                    </svg>
+                </a>
             </li>
         </ul>
     </footer>
+    <script>
+        ( ( ) => {
+            document
+                .querySelector('js-feedback-form')
+                addEventListener('submit', e => {
+                    e.preventDefault( );
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                    e.currentTarget.reset( );
+                });
+        } )( );
+    </script>
     </body>
     
     </html>

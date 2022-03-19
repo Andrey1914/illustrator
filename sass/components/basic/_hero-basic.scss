@@ -1,0 +1,15 @@
+.hero {
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    // width: 1349px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

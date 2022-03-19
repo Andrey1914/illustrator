@@ -1,0 +1,45 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header {
+    max-width: 430px;
+    margin-bottom: 40px;
+    &__title {
+      font-size: 35px;
+    }
+
+    &__logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__nav {
+      max-width: 250px;
+    }
+
+    &__link {
+      font-size: 20px;
+
+      &--logo {
+        top: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    margin-bottom: 20px;
+    max-width: 300px;
+    &__title {
+      font-size: 20px;
+    }
+
+    &__logo {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__nav {
+      max-width: 180px;
+    }
+  }
+}

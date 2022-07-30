@@ -1,0 +1,77 @@
+.backdrop {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: rgb(0, 0, 0, 0.25);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: opacity 500ms, visibility 500ms;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms;
+  border-radius: 5px;
+  background: $white-color;
+
+  overflow-y: auto;
+
+  padding: 30px 30px;
+  @media screen and (max-width: 1279px) {
+    height: 100%;
+  }
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32;
+    padding-right: 32px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.modal__container {
+  height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.modal__button {
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  order: 1;
+}
+
+.modal__icon {
+  stroke: $black-color;
+}

@@ -1,152 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Illustration</title>
-    <link rel="stylesheet" href="./modern-normalize.css/modern-normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./modern-normalize.css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <!-- header -->
     <header>
-        <section class="section">
-            <div class="container">
-                <div class="header">
-                    <a class="header__link--logo" href="./index.html">
-                        <svg class="header__logo">
-                            <use href="./icon/symbol-defs.svg#new-logo"></use>
-                        </svg>
-                    </a>
-                    <h1 class="header__title">Illustrator Tania Proskurnia</h1>
-                </div>
-                
-                <nav>
-                    <ul class="header__nav list">
-                        <li class="header__item">
-                            <a class="header__link header__link--current" href="./index.html">Home</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link" href="./about.html">About</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+      <section class="section">
+        <div class="container">
+          <div class="header">
+            <a class="header__link--logo" href="./index.html">
+              <svg class="header__logo">
+                <use href="./icon/symbol-defs.svg#new-logo"></use>
+              </svg>
+            </a>
+            <h1 class="header__title">Illustrator Tania Proskurnia</h1>
+          </div>
+
+          <nav>
+            <ul class="header__nav list">
+              <li class="header__item">
+                <a class="header__link header__link--current" href="./index.html">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="./about.html">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <main>
-        <section class="hero">
-            <h2 class="hero__title">Wellcome</h2>
-            <img class="hero__img" src="./jpg/циплята.jpg" alt="циплята"/>
-        </section>
-        
-        <section class="section gallery">
-            <div class="container">
-                <h2 class="gallery__title">Pleasant viewing</h2>
-                <ul class="list gallery__list">
-                    <li class="gallery__item">
-                        <img src="./jpg/девочка-на-дереве.jpg" class="gallery__image" alt="девочка на дереве" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/девочка-на-подоконнике.jpg" class="gallery__image" alt="девочка на подоконнике" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/девочка.jpg" class="gallery__image" alt="девочка" w/>
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/бабушка.jpg" class="gallery__image" alt="бабушка.jpg" />
-                    </li>
-                    <li class="gallery__item gallery__item--diferent">
-                        <img src="./jpg/школьники.jpg" class="gallery__image gallery__image--big" alt="школьники" />
-                    </li>
-                    <li class="gallery__item gallery__item--diferent">
-                        <img src="./jpg/дружная-семейка.jpg" class="gallery__image gallery__image--big" alt="дружная семейка" />
-                    </li>
-                    <li class="gallery__item gallery__item--diferent">
-                        <img src="./jpg/семья-собралась-вместе.jpg" class="gallery__image gallery__image--big" alt="семья собралась вместе" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/поросята.jpg" class="gallery__image" alt="поросята" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/медведи.jpg" class="gallery__image" alt="медведи" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/девочка-гуляет-с-собакой.jpg" class="gallery__image" alt="девочка гуляет с собакой" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/дядя.jpg" class="gallery__image" alt="дядя" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/ежики.jpg" class="gallery__image" alt="ежики" />
-                    </li>
-                    <li class="gallery__item">
-                        <img src="./jpg/ленивец.jpg" class="gallery__image" alt="ленивец" />
-                    </li>
-                    <li class="gallery__item gallery__item--diferent">
-                        <img src="./jpg/выдуманный-персонаж.jpg" class="gallery__image gallery__image--big" alt="выдуманный персонаж" />
-                    </li>
-                    <li class="gallery__item">
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="./jpg/bear-m1x.jpg 1x, ./jpg/bear-m2x.jpg 2x">
-                        
-                            <source media="(max-width: 1199px)" srcset="./jpg/bear-t1x.jpg 1x, ./jpg/bear-t2x.jpg 2x">
-                        
-                            <source media="(min-width: 1200px)" srcset="./jpg/bear-d1x.jpg 1x, ./jpg/bear-d2x.jpg 2x">
-                        
-                            <img src="./jpg/bear-m1x.jpg" class="gallery__image" alt="bear">
-                        </picture>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <section class="hero">
+        <h2 class="hero__title">Wellcome</h2>
+        <img class="hero__img" src="./jpg/циплята.jpg" alt="циплята" />
+      </section>
+
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="gallery__title">Pleasant viewing</h2>
+          <ul class="list gallery__list">
+            <li class="gallery__item">
+              <img
+                src="./jpg/девочка-на-дереве.jpg"
+                class="gallery__image"
+                alt="девочка на дереве"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./jpg/девочка-на-подоконнике.jpg"
+                class="gallery__image"
+                alt="девочка на подоконнике"
+              />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/девочка.jpg" class="gallery__image" alt="девочка" w />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/бабушка.jpg" class="gallery__image" alt="бабушка.jpg" />
+            </li>
+            <li class="gallery__item gallery__item--diferent">
+              <img
+                src="./jpg/школьники.jpg"
+                class="gallery__image gallery__image--big"
+                alt="школьники"
+              />
+            </li>
+            <li class="gallery__item gallery__item--diferent">
+              <img
+                src="./jpg/дружная-семейка.jpg"
+                class="gallery__image gallery__image--big"
+                alt="дружная семейка"
+              />
+            </li>
+            <li class="gallery__item gallery__item--diferent">
+              <img
+                src="./jpg/семья-собралась-вместе.jpg"
+                class="gallery__image gallery__image--big"
+                alt="семья собралась вместе"
+              />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/поросята.jpg" class="gallery__image" alt="поросята" />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/медведи.jpg" class="gallery__image" alt="медведи" />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="./jpg/девочка-гуляет-с-собакой.jpg"
+                class="gallery__image"
+                alt="девочка гуляет с собакой"
+              />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/дядя.jpg" class="gallery__image" alt="дядя" />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/ежики.jpg" class="gallery__image" alt="ежики" />
+            </li>
+            <li class="gallery__item">
+              <img src="./jpg/ленивец.jpg" class="gallery__image" alt="ленивец" />
+            </li>
+            <li class="gallery__item gallery__item--diferent">
+              <img
+                src="./jpg/выдуманный-персонаж.jpg"
+                class="gallery__image gallery__image--big"
+                alt="выдуманный персонаж"
+              />
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./jpg/bear-m1x.jpg 1x, ./jpg/bear-m2x.jpg 2x"
+                />
+
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./jpg/bear-t1x.jpg 1x, ./jpg/bear-t2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./jpg/bear-d1x.jpg 1x, ./jpg/bear-d2x.jpg 2x"
+                />
+
+                <img src="./jpg/bear-m1x.jpg" class="gallery__image" alt="bear" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
 
     <footer class="footer">
-        <p class="copyright">&copy; Created for Tania Proskurnia</p>
-        <div class="social-links">
-            <ul class="list social-links__list">
-                <li class="social-links__item">
-                    <a class="social-links__link" href="https://instagram.com/tania.proskurnia?utm_medium=copy_link">
-                        <svg class="social-links__icon">
-                            <use href="./icon/icons.svg#icon-instagram-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a class="social-links__link" href="https://www.facebook.com/tania.proskurnia">
-                        <svg class="social-links__icon">
-                            <use href="./icon/icons.svg#icon-fb-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a class="social-links__link" href="https://t.me/Tania_Proskurnia">
-                        <svg class="social-links__icon">
-                            <use href="./icon/icons.svg#icon-telegram-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-links__item">
-                    <a class="social-links__link" href="viber://chat?number=+380934846750">
-                        <svg class="social-links__icon">
-                            <use href="./icon/icons.svg#icon-viber-icon"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <p class="copyright">&copy; Created for Tania Proskurnia</p>
+      <div class="social-links">
+        <ul class="list social-links__list">
+          <li class="social-links__item">
+            <a
+              class="social-links__link"
+              href="https://instagram.com/tania.proskurnia?utm_medium=copy_link"
+            >
+              <svg class="social-links__icon">
+                <use href="./icon/icons.svg#icon-instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.facebook.com/tania.proskurnia">
+              <svg class="social-links__icon">
+                <use href="./icon/icons.svg#icon-fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://t.me/Tania_Proskurnia">
+              <svg class="social-links__icon">
+                <use href="./icon/icons.svg#icon-telegram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="viber://chat?number=+380934846750">
+              <svg class="social-links__icon">
+                <use href="./icon/icons.svg#icon-viber-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+    <!-- <div class="backdrop-team is-hidden">  
+        <div class="modal-team">
+            <button class="modal-team__button" type="button">
+              <svg class="modal-team__icon" width="30" height="30">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal-team__container">
+                <form class="js-feedback-form" id="modal-email-container">
+                    <ul class="form-list">
+                        <li class="form-item">
+                            <label class="form-label">
+                                Name
+                                <input class="form-input" type="text" name="user-name"/>
+                                    <svg class="form-icon">
+                                        <use href="./icon/sprite.svg#icon-person-black"></use>
+                                    </svg>
+                            </label>
+                        </li>
+
+                        <li class="form-item">
+                            <div class="imail-input-container" id="email-input-container">
+                                <label class="form-label">
+                                    E-mail
+                                    <input class="form-input" type="email" name="email">
+                                        <svg class="form-icon">
+                                            <use href="./icon/sprite.svg#icon-email-black"></use>
+                                        </svg>
+                                </label>
+                            </div>
+                                
+                        </li>
+                        </ul>
+                </form>
+                <button class="btn-send" type="submit">send</button>
+            </div>
+        </div>
+    </div> -->
+  </body>
 </html>
